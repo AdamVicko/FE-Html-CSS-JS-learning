@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;/* include the padding and border in an element's total width and height*/
+    margin:0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.section {
+    height: 100vh; /* podijeli visine sekcije na tocno kolko se vidi u porzoru*/
+}
+
+.section h1 {  /*oba naslova u sekcijama*/
+    text-align: center; /*horizontalno centriranje*/
+    line-height: 100vh;/*vertikalno centriranje*/
+    font-size: 5rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;/*prebaci u uppercaase*/
+}
+
+.section1 h1 span{
+    opacity: 0;/*nevidljivi text*/
+    transition: all 0.3s ease; /*Trajanje tranzicije vremenski u skeundama*/
+    transform: translateY(50px);  /*premjesti po y osi za 50 pixela(gore)*/
+    display: inline-block;
+}
+
+.section .fademove {
+    transform: translateY(0);/* premjesti po y osi za 0 pixela(gore)*/
+    opacity: 1;
+}
+
+.section2 .images {
+    display: flex; 
+}
+
+.section2 .images img { /* slika u tim klasama (img) sirina*/
+    width: 50%; /*svaka slika zauzme 50% widtha*/
+    transition: all 1s ease; 
+    opacity: 0; /*da se ne vide*/
+}
+
+.section2 .images img.slideFromLeft { /* slika u tim klasama (img) sirina*/
+    transform: translatex(-50%); /*po x osi mu oduzmi 50 posto*/
+}
+
+.section2 .images img.slideFromRight { /* slika u tim klasama (img) sirina*/
+    transform: translatex(+50%);/*po x osi mu dodaj 50 posto*/
+}
+
+.section2 .images img.animated { /*klasa animated kreirana ovdje*/
+    transform: translatex(0); /*po x osi sve stavi na 0 odnosno pocetnu */
+    opacity: 1; /* da se vide*/
+}
+
+.section2 h1 {
+    line-height: 1.3;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 3rem;
+    text-transform: capitalize;/*pocetna slova velika*/
+}
+
+.border-line{
+    height: 2px;
+    width: 0%;
+    background-color: white;
+    transition: all 0.5s ease;
+}
+
+.but, .butimg {
+    padding-top: 50px;
+    text-align: center; /*horizontalno centriranje*/
+}
+
+.left, .leftimg{
+    margin-right: 200px;
+    letter-spacing: 1px;
+}
+
+.right, .rightimg{
+    margin-left: 200px;
+    letter-spacing: 1px;
+
+}
+
