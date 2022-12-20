@@ -1,0 +1,232 @@
+* {  /*Micemo marginu i border radi lakseg snalazenja znaci sve je na nuli trenutno */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* svi rubovi padding ulazi u ukupni width elementa (odnosno on se smanjuje kako bi usao u zadani width)*/
+}
+
+body {
+    font-family: sans-serif;
+    padding: 50px; /*sve cetri strane 50px*/
+    background-image: url('img/bg.jpg');
+    color: white;
+    background-size: cover ; /*smanji ili povecaj sliku kako bi popunila zadani element*/
+    box-shadow: rgba(0,0,0,0.8) 0 0 0 10000px inset; /*crnom bojom smo zasjenili body element radi boljeg isticanja */
+                /*rgba koristimo ukoliko zelimo providnu boju */
+}
+
+
+/* HOME PAGE LOGIN/REGISTER */
+h1 {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.main-wrapper {
+    max-width: 650px;
+    margin: auto;
+    background-color: rgba(255,255,255, 0.3);
+    padding: 50px; /*sve cetri strane*/
+}
+
+button {
+    cursor: pointer; /*na hoover postaje pointer svi gumbi */
+}
+
+form div {
+    padding: 15px 0; /*top i bottom padding na 15px, lijevo i desno 0*/
+}
+
+form div label {
+    display: block;  /*DOBIVAMO INPUT I LABEL JEDNO ISPOD DRUGOG */
+    font-weight: bold;
+    font-size: 16px;
+}
+
+form div input {
+    height: 50px;
+    width: 100%;
+    font-size: 18px;
+    padding: 0 10px; /*top bottom = 0, left right = 10px */
+}
+
+form div button { 
+    padding: 10px 30px;
+    font-size: 18px;
+}
+
+form ul li { /*Error message */
+    color: red;
+}
+
+form ul {
+    list-style: none; /*Bez ikakvih predznaka u listi */
+}
+
+.no-acc-register {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.no-acc-register button {
+    padding: 15px;
+    font-size: 18px;
+}
+
+no-acc-register p {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+
+/*REGISTER MODAL*/
+
+.custom-modal {
+    display: none;
+    background-color: black;
+    box-shadow: rgba(255,255,255,0.8) 0 0 1000px 1000px; /*zasjencaj sve okolo s bijelim*/
+    max-width: 650px;
+    margin: auto;
+    padding: 50px;
+
+    position: absolute;
+    top: 10%;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+.custom-modal button#closeModal {
+    height: 10px;
+    width: 20px;
+    color: white;
+    background-color: transparent;
+    border: 0;
+    font-size: 25px;
+    font-weight: bold;
+
+    position: absolute;
+    right: 30px;
+    top: 30px;
+}
+
+
+/*HEXA HOMEPAGE**********************/
+
+.inner-container {
+    border: 1px solid green !important;
+    padding: 15px;
+}
+
+.inner-container.left-side {
+    text-align: center;
+}
+
+.inner-container img.profile {
+    width: 70%;
+    border-radius: 50%; /*zaobljeno*/
+    display: block; /*po defaultu je slika inline mi ju stavljamo u block i centriramo pomocu margin auto*/
+    margin: auto;
+    border: 5px solid white;
+    margin-bottom: 20px;
+}
+
+.inner-container.right-side form {
+    display: flex;
+    height: 100px;
+}
+
+.inner-container.right-side form textarea {
+    width: 85%;/*zauzmi 85% sirine forme (gadamo da se popune do 100%)textarea + button*/
+    border: 0;
+    padding: 10px;
+    resize: none; /*nedamo moguscnost povecavanja i smanjivanja elementa prozora*/
+    outline-color: green;
+}
+
+.inner-container.right-side form button {
+    width: 15%; /*zauzmi 15% ood sirine forme */
+    border: 0;
+}
+
+#deleteprofile {
+    border: 2px solid red;
+    color: red;
+    padding: 5px 15px;  /*top-bottom 5 , left-right 15*/
+}
+
+#allPostsWrapper .single-post {
+    
+    background-color: white;
+    padding: 15px;
+    margin-top: 15px;
+    color: black;
+}
+
+#allPostsWrapper .single-post .post-content {
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+#allPostsWrapper .single-post .post-actions {
+    display: flex;
+    justify-content: space-between;
+    color: grey;
+}
+
+#allPostsWrapper .single-post .post-actions div button.like-btn {
+    background-image: url('img/like.png');
+    padding: 5px 15px 5px 40px;
+    background-repeat: no-repeat;
+    background-position: 10px;
+    border: 0;
+}
+
+#allPostsWrapper .single-post .post-actions div button.comment-btn {
+    background-image: url('img/comment.png');
+    padding: 5px 15px 5px 40px;
+    background-repeat: no-repeat;
+    background-position: 10px;
+    border: 0;
+}
+
+#allPostsWrapper .single-post .post-actions div button.remove-btn {
+    border-color: red;
+    color: red;
+    padding: 5px 15px; /*top-bottom 5 , left-right 15*/
+}
+
+#allPostsWrapper .single-post .post-comments form { /*sve sto ima veze sa komentarom posta*/
+   height: 30px;
+   margin-top: 15px;
+}
+
+#allPostsWrapper .single-post .post-comments form input { /*samo input dio komentara posta*/
+    width: 85%;
+    padding: 0 10px; /*top-bottom 5 , left-right 10*/
+}
+
+#allPostsWrapper .single-post .post-comments form button { /*samo button dio komentara posta*/
+    width: 15% ; 
+    background-color: grey;
+}
+
+#allPostsWrapper .single-post .post-comments {
+    display: none;
+}
+
+#allPostsWrapper .single-post .post-comments .single-comment {
+    border: 1px dotted green;
+    padding: 10px;
+    margin-top: 10px;
+}

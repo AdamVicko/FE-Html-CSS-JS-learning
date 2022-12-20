@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Grad Slunj</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/Slunj/custom.css">
+
+</head>
+
+<body>
+
+    <header>
+        
+        <div id="bgche"  >
+
+            <div class="text-center">
+                <img id="imgFront" src="/Slunj/Images/GrbSlunj.png" class="img-fluid" alt="Grb Grada Slunja">
+                <!--centriranje slike-->
+
+                <div class="d-none d-lg-block text-end">
+                    <input type="text" id="currentDate">
+                </div>
+
+                <div id="Grd" class="d-none d-lg-block text-end">
+                   <p>Gradonačelnica Grada Slunja <br>
+                        gđa. Mirjana Puškarić</p>
+                </div>
+
+            </div>
+
+        </div>
+
+            <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+                <div class="container-flex"><!--Zasto se stavlja FLEX ili FLUID ovdje??-->
+
+                    <button class="navbar-toggler btn btn-dark" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" 
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                        <div class="collapse navbar-collapse " id="navbarCollapse">
+                            <ul class="nav navbar-nav navbar-dark bg-dark mr-auto ">
+                                <li class="nav-item ">
+                                    <a class="nav-link active" href="Slunjhome.html">Naslovnica</a>
+                                </li>
+                
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="Novosti.html">Novosti</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link " href="Kontakt.html">
+                                        Kontakt
+                                    </a>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="nav-dropdown" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        O Gradu
+                                    </a>
+
+                                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="nav-dropdown">
+                                        <li><a class="dropdown-item" href="Organizacija.html">Organizacija</a></li>
+                                        <li><a class="dropdown-item" href="Povijest.html">Povijest</a></li>
+                                        <li><a class="dropdown-item" href="GradoviPrijatelji.html">Gradovi Prijatelji</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="OGradu.html">O Gradu</a></li>
+                                    </ul>
+
+                                </li>
+
+                            </ul>
+
+                            <div id="searchform" class="d-none d-lg-block">
+                                <form class="form-inline my-2 my-lg-0">
+                                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                                  </form>
+                            </div>
+
+                        </div>
+                </div>
+            </nav>
+
+        
+
+    </header>
+
+    <main class="container-flex" role="main">
+    
+        <div id="carouselDark" class="carousel carousel-dark slide carousel-fade" data-bs-ride="carousel">
+
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+
+            <div class="carousel-inner">
+
+                <div class="carousel-item carouselDark-carousel-image1 active" data-bs-interval="5000">
+                    
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 style="font-family: Gabriola;
+                        font-size: 6em;
+                        color: whitesmoke;">...krajobrazi Slunja...</h5>
+                    </div>
+                </div>
+
+                <div class="carousel-item carouselDark-carousel-image2" data-bs-interval="5000">
+                    
+
+                </div>
+
+                <div class="carousel-item carouselDark-carousel-image3" data-bs-interval="5000">
+                   
+                </div>
+
+            </div>
+            
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselDark" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselDark" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <div class="container povijest">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h2 class="pb-4 mb-4 fst-italic" style="padding-top: 3rem;">
+                        Kratka povijest
+                    </h2>
+                    <p class="art">
+                        Prostor Grada Slunja bio je naseljen još u prapovijesti o čemu svjedoče nalazi prapovijesnih gradina koji se nalaze u neposrednoj blizini samog gradskog naselja.
+                        O vladavini Rimskog carstva na prostorima Slunja svjedoče ostaci rimskog naselja u naselju Točak te fragmentarni nalaz rimskog epigrafskog spomenika u naselju Gornje Primišlje.
+                        Značajniji razvoj na prostoru Grada započinje 1323. godine kada je kralj Karlo Robert darovao kao nasljedni posjed čitavu Drežničku županiju obitelji Frankopana.
+                        Frankopani su za potrebe vladanja tom novodobivenom zemljom izgradili dva središta – gradove Tržac na Korani i Slunj na Slunjčici.
+                        Slunj se prvi puta u pisanim izvorima spominje 1390. godine kao već utvrđeni grad, a 1409. godine spominje se i naselje, odnosno trgovište Slunj izgrađeno na suprotnoj strani kanjona Slunjčice.
+                    </p>
+                </div>
+
+                <aside class="col-lg-4 mt-5">
+                    <div class="p-4 mb-3 mt-2 bg-light rounded">
+                        <h4>OD PLITVICA DO GRAČACA GRADA</h4>
+                        <p class="mb-0 fst-italic"> ...Preko mosta na Korani rijeci
+                            zelene se šume odvajkada,
+                            tu se stade prostirati Lika -
+                            od Plitvica do Gračaca grada...</p>
+                    </div>
+
+                    <div class="p-4 mb-3 bg-secondary rounded">
+                        <h4 class="text-white">DJEDA DJEDE MOG</h4>
+                        <p class="mb-0 fst-italic">
+                            ...Gdje god da te sinko
+                            život nosi smjelo,
+                            Hrvatskom se diči,
+                            digni svoje čelo!<br>
+                    </div>
+
+                    
+                    <div class="p-4 mb-3 bg-info rounded">
+                        <h4 class="text-white"></h4>
+                        <p class="mb-0 text-white rfs-text">Za sve upite javite nam se na <br>
+                            <a href="mailto:insertemailhere@xyz.com" class="text-decoration-none text-reset" >E-mail: grad-slunj@ka.t-com.hr</a></p>
+                    </div>
+                    
+                </aside>
+                <hr>
+            </div>
+        </div>
+        
+    <div class="container">
+
+        <div class="row" data-masonry='{"percentPosition": true }'>
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+                <div id="blood" class="card p-3">
+                    <figure class="p-3 mb-0">
+                        <blockquote class=" fst-italic blockquote">
+                            <p> Ako želite mir, nemojte razgovarati sa svojim prijateljima, već s vašim neprijateljima.</p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer mb-0 text-muted">
+                            Moshe Dayan
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="/Slunj/Images/ukraine-peace.jpg">
+                    <div class="card-body">
+                        
+                        <p class="card-text">Spasili se od rata i pronašli utočište u Hrvatskoj!
+                            Saznaj kako možeš pomoći i ti!
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="Novosti.html" class="btn btn-primary">Saznaj detalje</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="">
+                    <div class="card-body">
+                        <h5 class="card-title" 
+                            style="font-family: Gabriola;
+                            font-size: 6em;
+                            color: whitesmoke;">
+                            Proračun
+                        </h5>
+                        <p class="card-text">Sve o proračunu Grada Slunja i budućim investicijama!</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="applepie.html" class="btn btn-primary">Saznaj detalje</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+                <div class="card bg-primary text-white text-center p-3">
+                    <figure class="mb-0">
+                        <blockquote class="blockquote">
+                            <p>Sve o proračunu Grada Slunja i budućim investicijama!</p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer mb-0 text-white">
+                            Laura Peach in <cite title="Source Title">The Pie Observer</cite>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+                <div class="card">
+                    <div class="card-body bg-secondary ">
+                        <p class="card-text fw-bold">Sve o proračunu Grada Slunja i budućim investicijama!</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="applepie.html" class="btn btn-primary">Saznaj detalje</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="images/products/cherrypiesmall.jpg">
+                    <div class="card-body">
+                        <h5 class="card-title">Cherry pie</h5>
+                        <p class="card-text">A summer classic!</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="applepie.html" class="btn btn-primary">Saznaj detalje</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="images/products/christmasapplepiesmall.jpg">
+                    <div class="card-body">
+                        <h5 class="card-title">Christmas apple pie</h5>
+                        <p class="card-text">Happy holidays with this pie! </p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="applepie.html" class="btn btn-primary">Saznaj detalje</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="images/products/cranberrypiesmall.jpg">
+                    <div class="card-body">
+                        <h5 class="card-title">Cranberry pie</h5>
+                        <p class="card-text">A Christmas favorite </p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="applepie.html" class="btn btn-primary">Saznaj detalje</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="images/products/peachpiesmall.jpg">
+                    <div class="card-body">
+                        <h5 class="card-title">Peach pie</h5>
+                        <p class="card-text">Sweet as peach</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="applepie.html" class="btn btn-primary">Saznaj detalje</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+                <div class="card">
+                    <img src="images/carousel1.jpg">
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="images/products/pumpkinpiesmall.jpg">
+                    <div class="card-body">
+                        <h5 class="card-title">Pumpkin pie</h5>
+                        <p class="card-text">Our Halloween favorite </p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="applepie.html" class="btn btn-primary">Saznaj detalje</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="images/products/rhubarbpiesmall.jpg">
+                    <div class="card-body">
+                        <h5 class="card-title">Rhubarb pie</h5>
+                        <p class="card-text">My God, so sweet!</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="applepie.html" class="btn btn-primary">Saznaj detalje</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+                <div class="card p-3 text-end">
+                    <figure class="mb-0">
+                        <blockquote class="blockquote">
+                            <p>You NEED to taste these. Trust me.</p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer mb-0 text-muted">
+                            Jack Baker in <cite title="Source Title">The Daily Pie</cite>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="images/products/strawberrycheesecakesmall.jpg">
+                    <div class="card-body">
+                        <h5 class="card-title">Strawberry cheese cake</h5>
+                        <p class="card-text">You'll love it! </p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="applepie.html" class="btn btn-primary">Saznaj detalje</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="images/products/strawberrypiesmall.jpg">
+                    <div class="card-body">
+                        <h5 class="card-title">Strawberry pie</h5>
+                        <p class="card-text">Our delicious strawberry pie!</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="applepie.html" class="btn btn-primary">Saznaj detalje</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </main>
+
+    <footer>
+        <div class="text-center">
+        <div class="container mt-5 pt-5 pb-5">
+            <div id="fot" class="row align-items-start">
+                <div class="col">
+                    <i class="bi bi-telephone"> </i>Ured grada: 047 777 102
+                        <br>
+                        <br>
+                    <a href=" https://www.facebook.com/slunj/?_rdc=1&_rdr" class="text-decoration-none text-reset"><i class="bi bi-facebook"> </i>Facebook:facebook.com/slunj/</a>
+                        <br>
+                        <br>
+                    <a href="mailto:insertemailhere@xyz.com" class="text-decoration-none text-reset"><i class="bi bi-envelope"> </i>E-mail: grad-slunj@ka.t-com.hr</a></p>
+                </div>
+                <div class="col">
+                    Grad Slunj
+                        <br>
+                        <br>
+                        <i class="bi bi-globe"> </i>Slunj, 47240
+                        
+                        <br>
+                        <br>
+                        <i class="bi bi-bank2"> </i>OIB: 33366502542
+                        <br>
+                        <br>
+                        <a href="https://goo.gl/maps/WXw9PgCXFUg8p23U8" class="text-decoration-none text-reset"><i class="bi bi-geo-alt"> </i>Adresa: Trg dr. Franje Tuđmana 12</a>
+                </div>
+        </div>
+    </div>
+    </footer>
+    
+    <!--DATUM -->
+    <script>
+        var today = new Date();
+        var date = today.getDate()+'.'+(today.getMonth()+1)+'.'+today.getFullYear();
+        document.getElementById("currentDate").value = date;
+    </script>
+
+    <!--Bootstrap-->
+    <script 
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous">        
+    </script>
+
+    <!--Data Masonry-->
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" 
+        integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D"
+        crossorigin="anonymous" async>
+    </script>
+
+</body>
+</html>
